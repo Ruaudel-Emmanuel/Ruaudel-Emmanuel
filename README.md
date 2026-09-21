@@ -3,7 +3,7 @@
 > **J'aide les dirigeants de PME à libérer 5 à 10 h/semaine** en automatisant leurs tâches répétitives —
 > et je construis moi-même les outils qui le font : sites web, apps Android, infrastructure VPS, workflows IA.
 
-📍 Rennes · 🌐 [Mon portfolio]((https://rennesdev.fr/portofolio.html))
+📍 Rennes · 🌐 [Portfolio](https://rennesdev.fr/portofolio.html)
 
 ---
 
@@ -83,5 +83,5 @@ Preuve par l'exemple de ce que je vends aux PME :
 
 ## 📬 Contact
 
-- 🌐 [Portfolio](https://raudel-emmanuel.github.io/RuaudelEmmanuel.github.io/)
+- 🌐 [Portfolio](https://rennesdev.fr/portofolio.html)
 - 💬 via GitHub (ouvert aux discussions, missions et opportunités)
