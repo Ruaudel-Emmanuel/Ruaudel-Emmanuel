@@ -124,6 +124,29 @@ Preuve par l'exemple de ce que je vends aux PME :
 ---
 ---
 
+---
+
+## 📦 Workflows n8n archivés (trace historique)
+
+Ces dépôts étaient des **exports de workflows n8n** (JSON + README), créés automatiquement lors des sessions de développement.
+Ils ont été **supprimés le 02/10/2026** pour nettoyer le profil GitHub. Les données sont sauvegardées sur le PC local.
+
+| Dépôt | Workflow |
+|---|---|
+| `n8n-to-Github` | Backup de workflows n8n vers GitHub |
+| `Daily-Github` | Tâches GitHub quotidiennes automatisées |
+| `Ai-agent-convervationel` | Agent conversationnel IA |
+| `AI-personnal-assistant` | Assistant personnel IA |
+| `rss-discord` | Flux RSS vers Discord |
+| `mail-auto` | Envoi d'emails automatisé |
+| `Newsletter-podcast` | Newsletter podcast automatisée |
+| `Mail-to-sheet` | Email vers Google Sheets |
+| `Cold-Lead-Reactivation` | Réactivation de prospects froids |
+| `Deep-research` | Recherche approfondie automatisée |
+| `Parallel-Batch-Processing` | Traitement par lots parallèles |
+| `Local_Agent_IA` | Agent IA local |
+| `rss-codeur` | Flux RSS Codeur.com |
+
 <a id="-english-version"></a>
 ## 🇬🇧 English version
 
@@ -229,6 +252,28 @@ Proof by example of what I sell to small businesses:
 - 📊 Issue/PR templates and branch protection on all active repos
 
 ---
+
+### 📦 Archived n8n workflows (historical record)
+
+These repos were **n8n workflow exports** (JSON + README), auto-created during development sessions.
+They were **deleted on 2026-10-02** to clean up the GitHub profile. Data is backed up on the local PC.
+
+| Repo | Workflow |
+|---|---|
+| `n8n-to-Github` | Backup n8n workflows to GitHub |
+| `Daily-Github` | Automated daily GitHub tasks |
+| `Ai-agent-convervationel` | AI conversational agent |
+| `AI-personnal-assistant` | AI personal assistant |
+| `rss-discord` | RSS feed to Discord |
+| `mail-auto` | Automated email sending |
+| `Newsletter-podcast` | Automated podcast newsletter |
+| `Mail-to-sheet` | Email to Google Sheets |
+| `Cold-Lead-Reactivation` | Cold lead reactivation |
+| `Deep-research` | Automated deep research |
+| `Parallel-Batch-Processing` | Parallel batch data processing |
+| `Local_Agent_IA` | Local AI agent |
+| `rss-codeur` | Codeur.com RSS feed |
+
 
 ## 📬 Contact
 
