@@ -88,6 +88,13 @@ Suivi automatique des tarifs concurrents : collecte planifiée, comparaison, ale
 - Python · planification · rapports automatiques
 - **`surveillance-tarifaire`** → [repo](https://github.com/Ruaudel-Emmanuel/surveillance-tarifaire)
 
+### 6. GitHub Auditor — audit IA quotidien de tous mes projets
+Un workflow n8n qui **analyse chaque matin à 06h00** tous mes dépôts GitHub actifs via **Ollama local** (qwen2.5:3b) et m'envoie un rapport bienveillant et constructif sur Telegram.
+- Le LLM adopte le rôle d'**« Architecte Collaborateur »** (Staff Engineer enthousiaste)
+- 4 dimensions d'analyse : Issues, Bugs/Risques, Code Review, PR
+- Aucune donnée ne quitte le VPS, aucun secret dans le code
+- **`GitHub-Auditor`** → [repo](https://github.com/Ruaudel-Emmanuel/GitHub-Auditor)
+
 ---
 
 ## ⚙️ Ce GitHub s'administre en grande partie tout seul
@@ -201,6 +208,13 @@ The technical core of my business, **documented and versioned as a real project*
 Automatic tracking of competitors' prices: scheduled collection, comparison, alerts.
 - Python · scheduling · automated reports
 - [repo](https://github.com/Ruaudel-Emmanuel/surveillance-tarifaire)
+
+### 6. GitHub Auditor — daily AI audit of all my projects
+An n8n workflow that **every morning at 06h00** analyses all my active GitHub repos using **local Ollama** (qwen2.5:3b) and sends a constructive, enthusiastic report to Telegram.
+- The LLM acts as an **"Architecte Collaborateur"** (Staff Engineer mentor)
+- 4 analysis dimensions: Issues, Bug/Risk, Code Review, PR
+- Zero data leaves the VPS, zero secrets in code
+- [repo](https://github.com/Ruaudel-Emmanuel/GitHub-Auditor)
 
 ---
 
