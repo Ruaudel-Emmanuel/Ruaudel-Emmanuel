@@ -92,6 +92,12 @@ Suivi automatique des tarifs concurrents : collecte planifiée, comparaison, ale
 Un workflow n8n qui **analyse chaque matin à 06h00** tous mes dépôts GitHub actifs via **Ollama local** (qwen2.5:3b) et m'envoie un rapport bienveillant et constructif sur Telegram.
 - Le LLM adopte le rôle d'**« Architecte Collaborateur »** (Staff Engineer enthousiaste)
 - 4 dimensions d'analyse : Issues, Bugs/Risques, Code Review, PR
+
+### 7. Scan ubuntu-latest — veille CI/CD GitHub Actions
+Un workflow n8n qui **scanne chaque matin à 05h00** l'ensemble de mes workflows GitHub Actions pour détecter l'utilisation de `runs-on: ubuntu-latest`. En vue du passage de Ubuntu 24.04 → 26.04, ce scan identifie les workflows à migrer et génère un rapport avec **Ollama local** sur Telegram.
+- 2 repos concernés identifiés (Lecteur-PDF, construction-site-tracker) et **déjà figés sur ubuntu-24.04**
+- Rapport Telegram automatisé avec analyse LLM
+- **`rennesdev-vps-ops/workflows/scan-ubuntu-latest/`** → [workflow exporté](https://github.com/Ruaudel-Emmanuel/rennesdev-vps-ops/tree/main/workflows/scan-ubuntu-latest)
 - Aucune donnée ne quitte le VPS, aucun secret dans le code
 - **`GitHub-Auditor`** → [repo](https://github.com/Ruaudel-Emmanuel/GitHub-Auditor)
 
