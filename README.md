@@ -1,9 +1,10 @@
-# 👋 Emmanuel Ruaudel — Consultant & développeur d'outils métier
+# 👋 Emmanuel Ruaudel — Directeur de la Transformation Numérique
 
-> 🇫🇷 **Version française** plus bas — 🇬🇧 [English version](#-english-version)
+> 🇬🇧 [English version](#-english-version)
 
-> **J'aide les dirigeants de PME à libérer 5 à 10 h/semaine** en automatisant leurs tâches répétitives —
-> et je construis moi-même les outils qui le font : sites web, apps Android, infrastructure VPS, workflows IA.
+> **J'aide les dirigeants de TPE/PME à libérer 5 à 10 h/semaine** en automatisant leurs tâches répétitives —
+> et je pilote la transformation de bout en bout : audit des processus, cas d'usage IA à fort ROI,
+> déploiement, fiabilisation et accompagnement du changement.
 
 📍 Rennes · 🌐 [Mon portfolio](https://rennesdev.fr/portofolio.html)
 
@@ -11,8 +12,8 @@
 
 ## 🎯 Missions & objectifs
 
-- **Automatiser le quotidien des PME/TPE** : formulaires → devis → emails, veille concurrentielle, alertes et rapports — avec un retour mesuré en heures gagnées.
-- **Construire des outils simples et réellement utilisés** : applications web et Android, légères, hors-ligne quand il le faut, publiées sur le Play Store.
+- **Automatiser le quotidien des TPE/PME** : formulaires → devis → emails, veille concurrentielle, alertes et rapports — avec un retour mesuré en heures gagnées.
+- **Construire des outils simples et réellement utilisés** : applications web et Android, légères, hors ligne quand il le faut, publiées sur le Play Store.
 - **Faire tourner une infrastructure complète en autonomie** : VPS Linux, Docker, supervision, sauvegardes chiffrées, CI/CD — tout est documenté, versionné et automatisé.
 - **IA pragmatique** : modèles locaux (Ollama) pour les données personnelles, API quand c'est pertinent — le bon outil au bon endroit.
 
@@ -20,7 +21,7 @@
 
 ## 📊 Métriques
 
-### Impact client (consulting)
+### Impact client (conseil)
 
 | Métrique | Valeur |
 |---|---|
@@ -62,70 +63,12 @@
 Un navigateur simplifié qui **extrait le contenu des pages et l'analyse avec un modèle IA local** (résumé, questions/réponses) — les données ne quittent jamais le serveur.
 - Node.js sans dépendance, authentification, HTTPS, Docker
 - IA : Ollama sur le VPS, déchargement automatique de la RAM
-- **`Nav.rennesdev`** → [repo](https://github.com/Ruaudel-Emmanuel/Nav.rennesdev)
+- [repo](https://github.com/Ruaudel-Emmanuel/Nav.rennesdev)
 
 ### 2. Lecteur-PDF — app Android 100 % hors ligne
 Lecteur PDF avec **PDF.js embarqué** (aucun CDN), zoom, mode sombre mémorisé, **zéro permission Android** (ni réseau ni stockage).
 - Capacitor 8 · CI GitHub Actions · release signée
 - Publié sur le **Play Store** (test fermé)
-- **`Lecteur-PDF`** → [repo](https://github.com/Ruaudel-Emmanuel/Lecteur-PDF)
-
-### 3. Suivi Interventions — suivi de chantier Android
-Application de suivi pour le terrain : interventions, photos directes, export.
-- Capacitor + caméra · build CI à chaque PR · dépendances mises à jour **et mergées automatiquement** chaque semaine
-- Publié sur le **Play Store**
-- **`construction-site-tracker`** → [repo](https://github.com/Ruaudel-Emmanuel/construction-site-tracker)
-
-### 4. rennesdev-vps-ops — l'infrastructure qui fait tout tourner
-Le cœur technique de mon activité, **documenté et versionné comme un projet à part entière** :
-- 10 conteneurs Docker (n8n, PostgreSQL, Ollama, monitoring…), reverse proxy, sauvegardes chiffrées
-- Bots Telegram de contrôle, watchdog qui **ouvre/clôt ses propres issues GitHub**
-- CI sur les builds Android, dépendances auto-mergées, journal quotidien commité automatiquement
-- **`rennesdev-vps-ops`** → [repo](https://github.com/Ruaudel-Emmanuel/rennesdev-vps-ops)
-
-### 5. surveillance-tarifaire — veille concurrentielle automatisée
-Suivi automatique des tarifs concurrents : collecte planifiée, comparaison, alertes.
-- Python · planification · rapports automatiques
-- **`surveillance-tarifaire`** → [repo](https://github.com/Ruaudel-Emmanuel/surveillance-tarifaire)
-
-### 6. GitHub Auditor — audit IA quotidien de tous mes projets
-Un workflow n8n qui **analyse chaque matin à 06h00** tous mes dépôts GitHub actifs via **Ollama local** (qwen2.5:3b) et m'envoie un rapport bienveillant et constructif sur Telegram.
-- Le LLM adopte le rôle d'**« Architecte Collaborateur »** (Staff Engineer enthousiaste)
-- 4 dimensions d'analyse : Issues, Bugs/Risques, Code Review, PR
-
-### 7. Scan ubuntu-latest — veille CI/CD GitHub Actions
-Un workflow n8n qui **scanne chaque matin à 05h00** l'ensemble de mes workflows GitHub Actions pour détecter l'utilisation de `runs-on: ubuntu-latest`. En vue du passage de Ubuntu 24.04 → 26.04, ce scan identifie les workflows à migrer et génère un rapport avec **Ollama local** sur Telegram.
-- 2 repos concernés identifiés (Lecteur-PDF, construction-site-tracker) et **déjà figés sur ubuntu-24.04**
-- Rapport Telegram automatisé avec analyse LLM
-- **`rennesdev-vps-ops/workflows/scan-ubuntu-latest/`** → [workflow exporté](https://github.com/Ruaudel-Emmanuel/rennesdev-vps-ops/tree/main/workflows/scan-ubuntu-latest)
-- Aucune donnée ne quitte le VPS, aucun secret dans le code
-- **`GitHub-Auditor`** → [repo](https://github.com/Ruaudel-Emmanuel/GitHub-Auditor)
-
----
-
-## ⚙️ Ce GitHub s'administre en grande partie tout seul
-
-Preuve par l'exemple de ce que je vends aux PME :
-
-- 🧪 **CI sur chaque PR** : build Android vérifié avant tout merge (check requis pour merger)
-- 🔄 **Dépendances** : PR chaque semaine, mergées automatiquement si la CI est verte
-- 📔 **Journal quotidien** : l'état de l'infrastructure est commité automatiquement chaque soir
-- 🚨 **Incidents** : le watchdog du serveur **ouvre et clôt ses propres issues** GitHub
-- 📊 Templates d'issues/PR et protections de branches sur tous les dépôts actifs
-
----
-
-## 📬 Contact
-
-- 🌐 [Portfolio](https://rennesdev.fr/portofolio.html)
-- 💬 via GitHub (ouvert aux discussions, missions et opportunités)
-
----
-
-## 📊 Activité
-
-<p><img src="https://github-readme-stats.vercel.app/api?username=Ruaudel-Emmanuel&show_icons=true&theme=default" height="150" /></p>
-<p><img src="https://streak-stats.demolab.com?user=Ruaudel-Emmanuel" height="150" /></p>
 
 ---
 ---
