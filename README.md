@@ -184,7 +184,7 @@ nombre de repos suivis (`[:3]`), fenêtre de commits (`days=7`), taille du SVG.
 - **Automate the daily grind of small businesses**: forms → quotes → emails, competitive watch, alerts and reports — with results measured in hours saved.
 - **Build simple tools that actually get used**: web and Android apps, lightweight, offline-capable when needed, published on the Play Store.
 - **Run a full infrastructure on my own**: Linux VPS, Docker, monitoring, encrypted backups, CI/CD — everything documented, version-controlled and automated.
-- **Pragmatic AI**: local models (Ollama) for personal data, APIs when appropriate — the right tool in the right place.
+- **Pragmatic AI**: Mistral models for personal data, APIs when appropriate — the right tool in the right place.
 
 ---
 
