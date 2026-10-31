@@ -15,7 +15,7 @@
 - **Automatiser le quotidien des TPE/PME** : formulaires → devis → emails, veille concurrentielle, alertes et rapports — avec un retour mesuré en heures gagnées.
 - **Construire des outils simples et réellement utilisés** : applications web et Android, légères, hors ligne quand il le faut, publiées sur le Play Store.
 - **Faire tourner une infrastructure complète en autonomie** : VPS Linux, Docker, supervision, sauvegardes chiffrées, CI/CD — tout est documenté, versionné et automatisé.
-- **IA pragmatique** : modèles locaux (Ollama) pour les données personnelles, API quand c'est pertinent — le bon outil au bon endroit.
+- **IA pragmatique** : LLM via API (Mistral) par défaut — l'auto-hébergement a été testé puis écarté au profit de la sobriété ressources — le bon outil au bon endroit.
 
 ---
 
@@ -132,8 +132,37 @@ Ces dépôts étaient des **exports de workflows n8n** (JSON + README), créés 
 
 ## 📊 Activité
 
-<p><img src="https://github-readme-stats.vercel.app/api?username=Ruaudel-Emmanuel&show_icons=true&theme=default" height="150" /></p>
-<p><img src="https://streak-stats.demolab.com?user=Ruaudel-Emmanuel" height="150" /></p>
+# 📊 live-readme — README vivant
+
+> Carte d'activité GitHub générée automatiquement chaque matin : stars, forks, issues ouvertes,
+> commits des 7 derniers jours et derniers commits — **0 LLM, 0 token, 0 €**.
+
+![Activité GitHub](assets/github-activity.svg)
+
+## ⚙️ Comment ça marche
+
+| Élément | Rôle |
+|---|---|
+| `.github/workflows/live-readme.yml` | cron quotidien à 07h17 (Paris) + déclenchement manuel |
+| `scripts/generate_activity_svg.py` | Python stdlib — ~7 requêtes API GitHub, aucune dépendance |
+| `assets/github-activity.svg` | la carte, commitée uniquement si son contenu change |
+
+Le workflow tourne gratuitement (runner public), sans secret à configurer : le
+`GITHUB_TOKEN` automatique suffit. Si rien n'a changé depuis la veille, aucun commit
+n'est créé — l'historique reste propre.
+
+## 🔗 Réutiliser la carte ailleurs
+
+Le SVG est référençable depuis n'importe quel README :
+
+```text
+![Activité](https://raw.githubusercontent.com/Ruaudel-Emmanuel/live-readme/main/assets/github-activity.svg)
+```
+
+## 🎨 Personnalisation
+
+Tout se règle en tête de `scripts/generate_activity_svg.py` : couleurs (`fg`, `accent`, `bg`),
+nombre de repos suivis (`[:3]`), fenêtre de commits (`days=7`), taille du SVG.
 
 ---
 
