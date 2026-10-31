@@ -69,42 +69,84 @@ Un navigateur simplifié qui **extrait le contenu des pages et l'analyse avec un
 Lecteur PDF avec **PDF.js embarqué** (aucun CDN), zoom, mode sombre mémorisé, **zéro permission Android** (ni réseau ni stockage).
 - Capacitor 8 · CI GitHub Actions · release signée
 - Publié sur le **Play Store** (test fermé)
+- [repo](https://github.com/Ruaudel-Emmanuel/Lecteur-PDF)
+
+### 3. rennesdev-vps-ops — l'infrastructure qui fait tout tourner
+Le cœur technique de mon activité, **documenté et versionné comme un projet à part entière** :
+- 10 conteneurs Docker (n8n, PostgreSQL, Ollama, monitoring…), reverse proxy, sauvegardes chiffrées
+- Bots Telegram de contrôle, watchdog qui **ouvre/clôt ses propres issues GitHub**
+- CI sur les builds Android, dépendances auto-mergées, journal quotidien commité automatiquement
+- [repo](https://github.com/Ruaudel-Emmanuel/rennesdev-vps-ops)
+
+### 4. Fiscale-vps — facturation électronique conforme, locale, sans abonnement
+Générateur **Factur-X** (PDF/A-3 + XML embarqué) conforme EN 16931 — pensé pour préparer les TPE/PME à l'obligation 2026, sans SaaS ni abonnement.
+- Python (reportlab + factur-x) · interface web légère · validation veraPDF
+- [repo](https://github.com/Ruaudel-Emmanuel/Fiscale-vps)
+
+### 5. surveillance-tarifaire — veille concurrentielle automatisée
+Suivi automatique des tarifs concurrents : collecte planifiée, comparaison, alertes.
+- Python · planification · rapports automatiques
+- [repo](https://github.com/Ruaudel-Emmanuel/surveillance-tarifaire)
+
+### 6. GitHub Auditor — audit IA quotidien de tous mes projets
+Un workflow n8n qui **analyse chaque matin à 06h00** tous mes dépôts GitHub actifs via **Ollama local** (qwen2.5:3b) et m'envoie un rapport constructif sur Telegram.
+- Le LLM adopte le rôle d'**« Architecte Collaborateur »** (Staff Engineer enthousiaste)
+- 4 dimensions d'analyse : Issues, Bugs/Risques, Code Review, PR
+- Aucune donnée ne quitte le VPS
+- [repo](https://github.com/Ruaudel-Emmanuel/GitHub-Auditor)
+
+### 7. Scan ubuntu-latest — veille CI/CD GitHub Actions
+Un workflow n8n qui **scanne chaque matin à 05h00** l'ensemble de mes workflows GitHub Actions pour détecter l'utilisation de `runs-on: ubuntu-latest`. En vue du passage Ubuntu 24.04 → 26.04, ce scan identifie les workflows à migrer et génère un rapport avec **Ollama local** sur Telegram.
+- Les repos concernés (dont Lecteur-PDF) sont **déjà figés sur ubuntu-24.04**
+- Rapport Telegram automatisé avec analyse LLM, aucun secret dans le code
+- [workflow exporté](https://github.com/Ruaudel-Emmanuel/rennesdev-vps-ops/tree/main/workflows/scan-ubuntu-latest)
 
 ---
----
+
+## ⚙️ Ce GitHub s'administre en grande partie tout seul
+
+Preuve par l'exemple de ce que je vends aux PME :
+
+- 🧪 **CI sur chaque PR** : build Android vérifié avant tout merge (check requis pour merger)
+- 🔄 **Dépendances** : PR chaque semaine, mergées automatiquement si la CI est verte
+- 📔 **Journal quotidien** : l'état de l'infrastructure est commité automatiquement chaque soir
+- 🚨 **Incidents** : le watchdog du serveur **ouvre et clôt ses propres issues** GitHub
+- 📊 Templates d'issues/PR et protections de branches sur tous les dépôts actifs
 
 ---
 
 ## 📦 Workflows n8n archivés (trace historique)
 
-Ces dépôts étaient des **exports de workflows n8n** (JSON + README), créés automatiquement lors des sessions de développement.
-Ils ont été **supprimés le 02/10/2026** pour nettoyer le profil GitHub. Les données sont sauvegardées sur le PC local.
+Ces dépôts étaient des **exports de workflows n8n** (JSON + README), créés automatiquement lors des sessions de développement. Ils ont été **supprimés le 02/10/2026** pour nettoyer le profil GitHub ; les données sont sauvegardées en local.
 
-| Dépôt | Workflow |
-|---|---|
-| `n8n-to-Github` | Backup de workflows n8n vers GitHub |
-| `Daily-Github` | Tâches GitHub quotidiennes automatisées |
-| `Ai-agent-convervationel` | Agent conversationnel IA |
-| `AI-personnal-assistant` | Assistant personnel IA |
-| `rss-discord` | Flux RSS vers Discord |
-| `mail-auto` | Envoi d'emails automatisé |
-| `Newsletter-podcast` | Newsletter podcast automatisée |
-| `Mail-to-sheet` | Email vers Google Sheets |
-| `Cold-Lead-Reactivation` | Réactivation de prospects froids |
-| `Deep-research` | Recherche approfondie automatisée |
-| `Parallel-Batch-Processing` | Traitement par lots parallèles |
-| `Local_Agent_IA` | Agent IA local |
-| `rss-codeur` | Flux RSS Codeur.com |
+`n8n-to-Github` · `Daily-Github` · `Ai-agent-convervationel` · `AI-personnal-assistant` · `rss-discord` · `mail-auto` · `Newsletter-podcast` · `Mail-to-sheet` · `Cold-Lead-Reactivation` · `Deep-research` · `Parallel-Batch-Processing` · `Local_Agent_IA` · `rss-codeur`
+
+---
+
+## 📬 Contact
+
+- 🌐 [Portfolio](https://rennesdev.fr/portofolio.html)
+- 💬 via GitHub (ouvert aux discussions, missions et opportunités)
+
+---
+
+## 📊 Activité
+
+<p><img src="https://github-readme-stats.vercel.app/api?username=Ruaudel-Emmanuel&show_icons=true&theme=default" height="150" /></p>
+<p><img src="https://streak-stats.demolab.com?user=Ruaudel-Emmanuel" height="150" /></p>
+
+---
 
 <a id="-english-version"></a>
 ## 🇬🇧 English version
 
-# 👋 Emmanuel Ruaudel — Consultant & business-tools developer
+# 👋 Emmanuel Ruaudel — Digital Transformation Director
 
 > **I help small-business owners free up 5 to 10 hours a week** by automating their repetitive tasks —
-> and I build the tools that do it myself: websites, Android apps, VPS infrastructure, AI workflows.
+> and I run the transformation end to end: process audit, high-ROI AI use cases, deployment,
+> reliability and change management.
 
-📍 Rennes, France · 🌐 [My portfolio](https://rennesdev.fr/portofolio.html) · 🇫🇷 [Version française](#-emmanuel-ruaudel--consultant--développeur-doutils-métier)
+📍 Rennes, France · 🌐 [My portfolio](https://rennesdev.fr/portofolio.html)
 
 ---
 
@@ -163,18 +205,17 @@ PDF reader with **embedded PDF.js** (no CDN), zoom, remembered dark mode, **zero
 - Published on the **Play Store** (closed testing)
 - [repo](https://github.com/Ruaudel-Emmanuel/Lecteur-PDF)
 
-### 3. Suivi Interventions — construction-site tracking app
-Field tracking app: interventions, direct photos, exports.
-- Capacitor + camera · CI build on every PR · dependencies updated **and merged automatically** every week
-- Published on the **Play Store**
-- [repo](https://github.com/Ruaudel-Emmanuel/construction-site-tracker)
-
-### 4. rennesdev-vps-ops — the infrastructure that runs everything
+### 3. rennesdev-vps-ops — the infrastructure that runs everything
 The technical core of my business, **documented and versioned as a real project**:
 - 10 Docker containers (n8n, PostgreSQL, Ollama, monitoring…), reverse proxy, encrypted backups
 - Telegram control bots, a watchdog that **opens and closes its own GitHub issues**
 - CI on Android builds, auto-merged dependencies, daily auto-committed journal
 - [repo](https://github.com/Ruaudel-Emmanuel/rennesdev-vps-ops)
+
+### 4. Fiscale-vps — compliant e-invoicing, local, subscription-free
+A **Factur-X generator** (PDF/A-3 + embedded XML, EN 16931 compliant) — built to prepare SMEs for the 2026 mandate, with no SaaS and no subscription.
+- Python (reportlab + factur-x) · lightweight web UI · veraPDF validation
+- [repo](https://github.com/Ruaudel-Emmanuel/Fiscale-vps)
 
 ### 5. surveillance-tarifaire — automated competitor price watch
 Automatic tracking of competitors' prices: scheduled collection, comparison, alerts.
@@ -182,10 +223,10 @@ Automatic tracking of competitors' prices: scheduled collection, comparison, ale
 - [repo](https://github.com/Ruaudel-Emmanuel/surveillance-tarifaire)
 
 ### 6. GitHub Auditor — daily AI audit of all my projects
-An n8n workflow that **every morning at 06h00** analyses all my active GitHub repos using **local Ollama** (qwen2.5:3b) and sends a constructive, enthusiastic report to Telegram.
-- The LLM acts as an **"Architecte Collaborateur"** (Staff Engineer mentor)
+An n8n workflow that **every morning at 06:00** analyses all my active GitHub repos using **local Ollama** (qwen2.5:3b) and sends a constructive report to Telegram.
+- The LLM acts as an **"Architecte Collaborateur"** (enthusiastic Staff Engineer)
 - 4 analysis dimensions: Issues, Bug/Risk, Code Review, PR
-- Zero data leaves the VPS, zero secrets in code
+- Zero data leaves the VPS
 - [repo](https://github.com/Ruaudel-Emmanuel/GitHub-Auditor)
 
 ---
@@ -201,28 +242,6 @@ Proof by example of what I sell to small businesses:
 - 📊 Issue/PR templates and branch protection on all active repos
 
 ---
-
-### 📦 Archived n8n workflows (historical record)
-
-These repos were **n8n workflow exports** (JSON + README), auto-created during development sessions.
-They were **deleted on 2026-10-02** to clean up the GitHub profile. Data is backed up on the local PC.
-
-| Repo | Workflow |
-|---|---|
-| `n8n-to-Github` | Backup n8n workflows to GitHub |
-| `Daily-Github` | Automated daily GitHub tasks |
-| `Ai-agent-convervationel` | AI conversational agent |
-| `AI-personnal-assistant` | AI personal assistant |
-| `rss-discord` | RSS feed to Discord |
-| `mail-auto` | Automated email sending |
-| `Newsletter-podcast` | Automated podcast newsletter |
-| `Mail-to-sheet` | Email to Google Sheets |
-| `Cold-Lead-Reactivation` | Cold lead reactivation |
-| `Deep-research` | Automated deep research |
-| `Parallel-Batch-Processing` | Parallel batch data processing |
-| `Local_Agent_IA` | Local AI agent |
-| `rss-codeur` | Codeur.com RSS feed |
-
 
 ## 📬 Contact
 
