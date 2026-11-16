@@ -1,4 +1,4 @@
-# 👋 Emmanuel Ruaudel — Développeur & Consultant IA
+# 👋 Emmanuel Ruaudel — Développeur agents IA & n8n 
 
 > **J'aide les dirigeants de TPE/PME à libérer 5 à 10 h/semaine** en automatisant leurs tâches répétitives —
 > et je pilote la transformation de bout en bout : audit des processus, cas d'usage IA à fort ROI,
